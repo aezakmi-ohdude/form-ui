@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <ellipse style="" cx="16" cy="15.886" rx="5.234" ry="5.234">
+    <animate attributeName="fill" values="rgb(0, 0, 0); rgb(0, 0, 0)" begin="0s" dur="2s" fill="freeze"/>
+  </ellipse>
+  <path style="fill: none; stroke: rgb(0, 0, 0);" d="M 6.364 13.579 C 7.055 12.883 19.271 2.611 25.714 16.624"/>
+  <ellipse style="stroke-width: 1; fill: rgb(255, 255, 255);" cx="16" cy="16" rx="2.378" ry="2.43"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0);" d="M 7.242 10.265 L 8.103 11.7"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 10.328 8.871 L 11.189 10.306" transform="matrix(0.994522, 0.104528, -0.104528, 0.994522, 0, 0)"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 16.645 7.726 L 17.506 9.161" transform="matrix(0.809017, 0.587785, -0.587785, 0.809017, 0, 0)"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 13.374 8.069 L 14.235 9.504" transform="matrix(0.93358, 0.358368, -0.358368, 0.93358, 0, 0)"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 22.291 10.138 L 23.152 11.573" transform="matrix(0.275638, 0.961262, -0.961262, 0.275638, 0.000001, 0)"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 19.864 8.426 L 20.725 9.861" transform="matrix(0.5, 0.866025, -0.866025, 0.5, 0, 0.000001)"/>
+  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 1; transform-box: fill-box; transform-origin: 50% 50%;" d="M 24.291 12.326 L 25.152 13.761" transform="matrix(0.034899, 0.999391, -0.999391, 0.034899, 0, 0)"/>
+</svg>

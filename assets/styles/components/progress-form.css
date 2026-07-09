@@ -1,0 +1,166 @@
+.progress-form{
+
+    display: flex;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.progress-form__submit{
+
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background: black;
+    padding: 0.5rem;
+    color: white;
+    width: 100%;
+}
+
+.progress-form__fields{
+
+    flex-grow: 1;
+}
+
+.form-field{
+
+    display: block;
+    width: 100%;
+}
+
+.form-field:has(.form-field__input:user-invalid){
+
+    .form-field__note--error{
+
+        display: block;
+    }
+}
+
+.form-field__label{
+
+    display: block;
+    margin-bottom: 0.25rem;
+
+}
+
+.form-field__input{
+
+    display: block;
+    outline: 1px solid black;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+.form-field__input:focus-visible{
+
+
+    outline: 2px solid black;
+}
+
+
+.form-field__password{
+
+    position: relative;
+    
+}
+
+.form-field__input:user-invalid{
+
+    outline: 1px solid red;  
+}
+
+.form-field__note{
+
+    padding: 0.25rem;
+}
+
+.form-field__note--error{
+    
+    display: none;
+    background: pink;
+    color: red;
+    font-size: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.form-field__reveal{
+
+    position: absolute;
+    top: 5%; bottom: 5%;
+    right: 1%;
+    background: white;
+    aspect-ratio: 1/1;
+}
+
+.form-field__reveal::after{
+
+    position: absolute;
+    top: 0; left: 0; 
+    bottom: 0; right: 0;
+    content: '';
+    background: url('../../img/icons/strikethrough.svg');
+}
+
+.form-group{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.form-group + .form-group{
+
+    margin-top: 2rem;
+}
+
+.progress-form__progress{
+
+    flex-grow: 1;
+    
+}
+
+.progress-form__circle{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.progress-circle__figure{
+
+    width: 8rem;
+}
+
+.progress-circle__text{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.progress-form__completness{
+
+    margin-top: 1.5rem;
+}
+
+.roadmap{
+
+    background: lightgray;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.roadmap__item{
+    color: black;
+    
+}
+
+.roadmap__item--completed{
+    color:  gray;
+    text-decoration: line-through;
+}
+

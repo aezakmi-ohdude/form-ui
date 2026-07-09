@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="progress-form">
+            <form action="./form.php" method="post" class="progress-form__fields">
+                <fieldset class="form-group">
+                    <label class="form-field">
+                        <span class="form-field__label">Full Name</span>
+                        <input class="form-field__input" type="text" name="name" required placeholder="Full Name">
+                        <div class="form-field__note form-field__note--error">Error occured!</div>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field__label">Email</span>
+                        <input class="form-field__input" type="email" name="email" required placeholder="Email">
+                        <div class="form-field__note form-field__note--error">Error occured!</div>
+                    </label>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label class="form-field">
+                        <span class="form-field__label">Password</span>
+                        <div class="form-field__password">
+                            <input class="form-field__input" type="password" name="password" required placeholder="xxxxxx">
+                            <div class="form-field__reveal">
+                                <img src="./assets/img/icons/eye.svg" class="responsive-image" alt="">
+                            </div>
+                        </div>
+                        <div class="form-field__note form-field__note--error">Error occured!</div>
+                    </label>
+                    <label class="form-field">
+                        <span class="form-field__label">Confirm Password</span>
+                        <div class="form-field__password">
+                            <input class="form-field__input" type="password" name="confirm_password" required placeholder="xxxxxx">
+                            <div class="form-field__reveal">
+                                <img src="./assets/img/icons/eye.svg" class="responsive-image" alt="">
+                            </div>
+                        </div>
+                        <div class="form-field__note form-field__note--error">Error occured!</div>
+                    </label>
+                </fieldset>
+                <button type="submit" class="progress-form__submit">Send</button>
+            </form>
+            <div class="progress-form__progress">
+                <div class="progress-form__circle progress-circle">
+                    <div class="progress-circle__figure">
+                        <svg viewBox="0 0 16 16" data-component="circle-progress">
+                          <circle cx="8"
+                                  cy="8" 
+                                  r="4" 
+                                  fill="none" 
+                                  stroke="black" 
+                                  data-progress="0.44"
+                                  data-progress-circle="circle"
+                                >
+                          </circle>
+                          <text 
+                              x="8" 
+                              y="8" 
+                              fill="black" 
+                              font-size="1.5"
+                              text-anchor="middle" 
+                              dominant-baseline="middle"
+                              data-progress-circle="percents"
+                          >
+                          </text>
+                        </svg>
+                    </div>
+                    <div class="progress-circle__text">
+                        Profile Completeness
+                    </div>
+                </div>
+                <div class="progress-form__completness roadmap">
+                    <div class="roadmap__item roadmap__item--completed">Create Account</div>
+                    <div class="roadmap__item roadmap__item--completed">Update Roadmap Progress</div>
+                    <div class="roadmap__item roadmap__item--completed">Setup Public Profile</div>
+                    <div class="roadmap__item">Complete your first project</div>
+                    <div class="roadmap__item">Invite your friends</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts/index.js" type="module"></script>
+</body>
+</html>
