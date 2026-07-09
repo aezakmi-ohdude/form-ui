@@ -167,6 +167,14 @@
     text-decoration: line-through;
 }
 
+@media (max-width: 48rem){
+
+    .progress-form{
+
+        flex-direction: column;
+    }
+}
+
 @media (prefers-contrast: more) {
     
     .roadmap__item--completed{
