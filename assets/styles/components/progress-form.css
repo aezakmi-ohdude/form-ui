@@ -163,7 +163,16 @@
 }
 
 .roadmap__item--completed{
-    color:  gray;
+    color:  contrast-color(gray);
     text-decoration: line-through;
+}
+
+@media (prefers-contrast: more) {
+    
+    .roadmap__item--completed{
+
+        color: black;
+    }
+
 }
 
