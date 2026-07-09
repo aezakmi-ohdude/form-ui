@@ -1,3 +1,5 @@
+// PROGRESS BAR
+
 let progressBars = document.querySelectorAll('[data-component="circle-progress"]')
 
 progressBars.forEach((item) => {
@@ -16,3 +18,36 @@ progressBars.forEach((item) => {
     circle.setAttribute('stroke-dashoffset', circleLength * (1 - progress));
     percents.textContent = `${parseInt(progress * 100)} %`
 });
+
+//PASSWORD REVEAL
+
+let accesibleForm = document.querySelectorAll('[data-component="accesible-form"]');
+
+accesibleForm.forEach((form)=>{
+
+    let fieldsToReveal = form.querySelectorAll('[data-reveal]');
+
+        fieldsToReveal.forEach((field)=>{
+
+            let input = field.querySelector('[type="password"]')
+            let toggle = field.querySelector('[type="button"]')
+
+
+            toggle.addEventListener('click', ()=>{
+
+                let isRevealed = field.getAttribute('data-reveal') == 'true';
+
+
+                field.setAttribute('data-reveal', String(!isRevealed));
+                input.setAttribute('type', !isRevealed ? 'text' : 'password');
+                toggle.setAttribute('aria-pressed', String(!isRevealed));
+
+                toggle.style.setProperty('--reveal-display', !isRevealed ? 'block' : 'none');
+
+
+            })
+
+        })
+
+})
+

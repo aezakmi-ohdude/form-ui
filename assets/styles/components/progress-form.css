@@ -85,6 +85,8 @@
 
 .form-field__reveal{
 
+    --reveal-display: none;
+
     position: absolute;
     top: 5%; bottom: 5%;
     right: 1%;
@@ -94,6 +96,7 @@
 
 .form-field__reveal::after{
 
+    display: var(--reveal-display);
     position: absolute;
     top: 0; left: 0; 
     bottom: 0; right: 0;
